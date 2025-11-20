@@ -1,0 +1,165 @@
+.textmove {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    /*font-st: Dancing script ;*/
+
+}
+
+.photomove {
+    position: absolute;
+    top: 31px;        /* déplace le logo vers le bas ou le haut */
+    left: 34%;        /* déplace horizontalement */
+    transform: translateX(-50%);
+    position: fixed;
+}
+
+.banner {
+    width: 100%;
+    height: 130px; 
+    background-color: #c27b62; 
+}
+
+.textmove h1 {
+    font-family: 'Dancing Script', cursive;
+    color: rgba(250, 215, 178, 0.99);
+}
+
+/*navigation bar*/
+
+.navbar {
+    position: absolute;   
+    top: 100px;           
+    width: 100%;       
+}
+
+.navbar ul {
+    display: flex;  
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    text-decoration: None;
+    color: black;
+    text-decoration: none; /* pour enlever le soulignement */
+}
+
+/*.banner2 {
+    width: 100%;
+    height: 550px; 
+    top: 20%;
+    position: absolute;
+    background-color: rgb(242,242,242); 
+} */
+
+.banner2 {
+    width: 100%;
+    height: 550px; 
+    background-color: rgb(242,242,242); 
+    display: flex;              /* aligne les images horizontalement */
+    justify-content: center;    /* centre les images */
+    align-items: center;        /* centre verticalement */
+    gap: 50px;                  /* espace entre les deux images */
+    top: 100%    
+}
+
+.banner2 img {
+    max-width: 200px;   /* taille max de chaque image */
+    height: auto;       /* garde les proportions */
+}
+
+.banner3 {
+    width: 100%;
+    height: 820px;
+    background-color: rgb(242,242,242);
+    overflow: hidden;            /* évite les débordements */
+    position: relative;
+}
+
+.banner3 img {
+    width: 100%;          /* image remplit toute la largeur du bloc */
+    height: 80%;         /* image remplit toute la hauteur du bloc */   /* couvre tout le bloc sans se déformer */
+    display: block;
+}
+
+.logo1 {
+    position: absolute;
+    top: 670px;          /* distance depuis le haut */
+    left: 200px;         /* distance depuis la gauche */
+    z-index: 10;        /* passe au-dessus de l’image */
+}
+
+.logo1 img {
+    width: 25%;
+
+}
+
+.logo2 {
+    position: absolute;
+    top: 650px;          /* distance depuis le haut */
+    left: 600px;         /* distance depuis la gauche */
+    z-index: 10;        /* passe au-dessus de l’image */
+}
+
+.logo2 img {
+    width: 30%;
+
+}
+
+.logo3 {
+    position: absolute;
+    top: 660px;          /* distance depuis le haut */
+    left: 1000px;         /* distance depuis la gauche */
+    z-index: 10;        /* passe au-dessus de l’image */
+}
+
+.logo3 img {
+    width: 35%;
+
+}
+
+
+.movetest1 span {
+    font-weight: normal;   /* not bold */
+    font-size: 20px;       /* adjust size */
+    display: block; 
+
+}
+
+.movetest2 span {
+    font-weight: normal;   /* not bold */
+    font-size: 20px;       /* adjust size */
+    display: block; 
+}
+
+.movetest3 span {
+    font-weight: normal;   /* not bold */
+    font-size: 20px;       /* adjust size */
+    display: block; 
+}
+
+.movetest1 {
+    position: relative;
+    top: 120px;
+    left: 1037px
+}
+
+.movetest2 {
+    position: relative;
+    top: 100px;
+    left: 600px;
+    
+}
+
+.movetest3 {
+    position: relative;
+    top: 80px;
+    left: 200px
+    
+}
