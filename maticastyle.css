@@ -50,14 +50,6 @@
     text-decoration: none; /* pour enlever le soulignement */
 }
 
-/*.banner2 {
-    width: 100%;
-    height: 550px; 
-    top: 20%;
-    position: absolute;
-    background-color: rgb(242,242,242); 
-} */
-
 .banner2 {
     width: 100%;
     height: 550px; 
@@ -76,7 +68,7 @@
 
 .banner3 {
     width: 100%;
-    height: 820px;
+    height: 650px; /*8*/
     background-color: rgb(242,242,242);
     overflow: hidden;            /* évite les débordements */
     position: relative;
@@ -85,81 +77,98 @@
 .banner3 img {
     width: 100%;          /* image remplit toute la largeur du bloc */
     height: 80%;         /* image remplit toute la hauteur du bloc */   /* couvre tout le bloc sans se déformer */
-    display: block;
-}
-
-.logo1 {
-    position: absolute;
-    top: 670px;          /* distance depuis le haut */
-    left: 200px;         /* distance depuis la gauche */
-    z-index: 10;        /* passe au-dessus de l’image */
-}
-
-.logo1 img {
-    width: 25%;
-
-}
-
-.logo2 {
-    position: absolute;
-    top: 650px;          /* distance depuis le haut */
-    left: 600px;         /* distance depuis la gauche */
-    z-index: 10;        /* passe au-dessus de l’image */
-}
-
-.logo2 img {
-    width: 30%;
-
-}
-
-.logo3 {
-    position: absolute;
-    top: 660px;          /* distance depuis le haut */
-    left: 1000px;         /* distance depuis la gauche */
-    z-index: 10;        /* passe au-dessus de l’image */
-}
-
-.logo3 img {
-    width: 35%;
-
+    object-fit: cover;
+    /*display: block;
+    position : relative*/
 }
 
 
-.movetest1 span {
-    font-weight: normal;   /* not bold */
-    font-size: 20px;       /* adjust size */
-    display: block; 
 
+.badges {
+  display: flex;
+  justify-content: space-between; /* espace régulier entre les 3 */
+  align-items: center;            /* aligner verticalement textes/images */
+  gap: 5px;                      /* espacement fixe entre cartes */
+  max-width: 1200px;              /* largeur max sur PC */
+  margin: -10px auto;              /* centré horizontalement */
+  padding: 16px 24px;
+  box-sizing: border-box;
 }
 
-.movetest2 span {
-    font-weight: normal;   /* not bold */
-    font-size: 20px;       /* adjust size */
-    display: block; 
+/* Carte individuelle */
+.badge {
+  display: flex;
+  flex-direction: column;   /* image au-dessus du texte (ou row si tu veux côte à côte) */
+  align-items: center;      /* centrer image + texte */
+  text-align: center;
+  flex: 1;                  /* occuper l’espace disponible de manière équilibrée */
+  width: 40%;         /* éviter que ça se tasse trop */
 }
 
-.movetest3 span {
-    font-weight: normal;   /* not bold */
-    font-size: 20px;       /* adjust size */
-    display: block; 
+/* Image du badge */
+.badge img {
+  width: 100px;             /* taille constante adaptée au PC */
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin-top: 1px;
 }
 
-.movetest1 {
-    position: relative;
-    top: 120px;
-    left: 1037px
+/* Texte du badge */
+.badge span {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: -25px;
 }
 
-.movetest2 {
-    position: relative;
-    top: 100px;
-    left: 600px;
-    
+
+.produits {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+  flex-wrap: wrap; /* permet de passer en colonne si besoin */
 }
 
-.movetest3 {
-    position: relative;
-    top: 80px;
-    left: 200px
-    
+.product-card {
+  border: 1px solid #c27676;
+  border-radius: 8px;
+  padding: 26px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 260px;
+  text-align: center;
+  background-color: rgb(176, 176, 176);
+}
+
+.product-card img {
+    border-radius:8px;
+    height: auto;
+    width: 190px;
+}
+
+/* Responsive mobile */
+@media (max-width: 768px) {
+  .badges { /* stack vertically */
+    justify-content: space-between;
+    align-items: center;      /* center horizontally */
+    width: 90%;   
+    margin: -10px auto; 
+  }
+
+  .badge {
+    text-align: center;       /* text centered under image */
+    width: 80%;               /* make badges wider on mobile */
+    height: 70%;
+  }
+
+  .badge img {
+    width: 80px;             /* taille constante adaptée au PC */
+    height: auto;
+  }
+
+  .badge span {
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: -15px;
+}
 }
