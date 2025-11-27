@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="maticastyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Clarity+City&display=swap" rel="stylesheet">
+
+    <title>Sol-Matica</title>
+</head>
+
+<body>
+    <!--
+    <div class="photomove">
+        <img src="argentina.png" width="50" height="50" alt="argentine logo">
+    </div>
+    -->
+    <div class="textmove">
+        <h1>Sol-Matica</h1>
+    </div>
+    <div class="inscription-container">
+        <button id="btn-inscription">S'inscrire</button>
+    </div>
+    <script>
+        document.getElementById("btn-inscription").addEventListener("click", function() {
+        window.location.href = "inscription.html"; // redirige vers ta page inscription
+        });
+    </script>
+
+
+    <div class="banner"></div>
+    <nav class = "navbar">
+        <ul>
+            <li><a href = #accueil>Accueil</a></li>
+            <li><a href = #produits>Produits</a></li>
+            <li><a href = #apropos>À propos</a></li>
+            <li><a href = "formulairemati.html">Contact</a></li>
+            <li><a href = #panier>Panier</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <div class="banner3">
+            <img src="Copilot_20251120_160056.png">
+                <div class="badges">
+
+                    <div class="badge">
+                        <img src="64213274-simple-contour-map-of-france-black-outline-map-isolated-on-white-background-removebg-preview.png">
+                        <span>Made in France</span>
+                    </div>
+
+                    <div class="badge">
+                        <img src="main-tenant-le-sol-avec-l-icone-de-ligne-plate-de-plante-vecteur-fin-signe-de-protection-de-l-environnement-logo-de-concept-d-ecologie-illustration-de-l-agriculture-2jn0ere-removebg-preview.png">
+                        <span>éco-responsable</span>
+                    </div>
+
+                    <div class="badge">
+                        <img src="logohen.png">
+                        <span>éthique</span>
+                    </div>
+
+                </div>
+
+            <!--<div class="movetest1"><span>éthique</span></div>
+            <div class="movetest2"><span>éco-responsable</span></div>
+            <div class="movetest3"><span>Made in France</span></div> -->
+        </div>
+    </section>
+
+    <!--<section>
+        <h1>Nos produits</h1>
+        <div class="banner2">
+            <img src="2.png" width="250" height="250">
+            <img src="3.png" width="250" height="250">
+        </div>-->
+
+    <h1 class="textmove2">Nos produits</h1>
+    <section class="produits">
+        <div class="header-actions">
+            <div class="panier">
+            🛒 <span id="panier-count">0</span>
+            </div>
+        </div>
+
+  <!-- Produits -->
+        <div class="product-card">
+            <img src="2.png" alt="Produit 1">
+            <div class="text">
+                <h3>Gommage Solide Purifiant</h3>
+            </div>
+            <div class="undertext">
+                <p>Ingrédients à base de matée et de framboise</p>
+                <button class="btn-panier">Ajouter au panier</button>
+             </div>
+        </div>
+
+        <div class="product-card">
+            <img src="3.png" alt="Produit 2">
+            <div class="text">
+                <h3>Crème Visage</h3>
+            </div>
+            <div class="undertext">
+                <p>Ingrédients à base de matée et de framboise</p>
+                <button class="btn-panier">Ajouter au panier</button>
+            </div>
+        </div>
+
+  <!-- Script panier -->
+        <script>
+            let panierCount = 0;
+            const panierDisplay = document.getElementById("panier-count");
+            const produits = document.querySelectorAll(".btn-panier");
+
+            produits.forEach(btn => {
+            btn.addEventListener("click", () => {
+                panierCount++;
+                panierDisplay.textContent = panierCount;
+            });
+            });
+        </script>
+    </section>
+</body>
+</html>
+
+
+
