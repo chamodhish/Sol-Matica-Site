@@ -1,0 +1,302 @@
+.textmove {
+    position: absolute;
+    top: 10px;
+    left: 10%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-family: 'Clarity City', sans-serif;
+}
+
+@font-face {
+  font-family: 'Clarity City';
+  src: url('fonts/ClarityCity.woff2') format('woff2'),
+       url('fonts/ClarityCity.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.textmove2 {
+  font-family: 'Clarity City', sans-serif;
+  margin-left:5%;
+  font-size: 25px;
+}
+
+.photomove {
+    position: absolute;
+    top: 31px;        /* déplace le logo vers le bas ou le haut */
+    left: 33%;        /* déplace horizontalement */
+    transform: translateX(-50%);
+    position: fixed;
+}
+
+.banner {
+    width: 100%;
+    height: 80px; 
+    background-color: white;  /*#c27b62*/
+}
+
+/*.textmove h1 {
+    font-family: 'Dancing Script', cursive;
+    color: rgba(250, 215, 178, 0.99);
+}*/
+
+/*navigation bar*/
+
+.navbar {
+    position: absolute;   
+    top: 43px;           
+    width: 100%; 
+    left: 0px;
+    font-family: 'Clarity City', sans-serif;      
+}
+
+.navbar ul {
+    display: flex;  
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    text-decoration: None;
+    color: black;
+    text-decoration: none; /* pour enlever le soulignement */
+}
+
+.banner2 {
+    width: 100%;
+    height: 550px; 
+    background-color: rgb(242,242,242); 
+    display: flex;              /* aligne les images horizontalement */
+    justify-content: center;    /* centre les images */
+    align-items: center;        /* centre verticalement */
+    gap: 50px;                  /* espace entre les deux images */
+    top: 100%    
+}
+
+.banner2 img {
+    max-width: 200px;   /* taille max de chaque image */
+    height: auto;       /* garde les proportions */
+}
+
+.banner3 {
+    width: 100%;
+    height: 650px; /*8*/
+    background-color: rgb(242,242,242);
+    overflow: hidden;            /* évite les débordements */
+    position: relative;
+}
+
+.banner3 img {
+    width: 100%;          /* image remplit toute la largeur du bloc */
+    height: 80%;         /* image remplit toute la hauteur du bloc */   /* couvre tout le bloc sans se déformer */
+    object-fit: cover;
+    /*display: block;
+    position : relative*/
+}
+
+
+
+.badges {
+  display: flex;
+  justify-content: space-between; /* espace régulier entre les 3 */
+  align-items: center;            /* aligner verticalement textes/images */
+  gap: 5px;                      /* espacement fixe entre cartes */
+  max-width: 1200px;              /* largeur max sur PC */
+  margin: -10px auto;              /* centré horizontalement */
+  padding: 16px 24px;
+  box-sizing: border-box;
+}
+
+/* Carte individuelle */
+.badge {
+  display: flex;
+  flex-direction: column;   /* image au-dessus du texte (ou row si tu veux côte à côte) */
+  align-items: center;      /* centrer image + texte */
+  text-align: center;
+  flex: 1;                  /* occuper l’espace disponible de manière équilibrée */
+  width: 40%;         /* éviter que ça se tasse trop */
+  font-family: 'Clarity City', sans-serif;
+}
+
+/* Image du badge */
+.badge img {
+  width: 100px;             /* taille constante adaptée au PC */
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin-top: -8px;
+}
+
+/* Texte du badge */
+.badge span {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: -17px;
+}
+
+
+.produits {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+  flex-wrap: wrap; /* permet de passer en colonne si besoin */
+}
+
+.product-card {
+  border-radius: 8px;
+  padding: 26px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 260px;
+  text-align: center;
+  background-color: rgb(242,242,242);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: scale(1); /* taille normale */
+}
+
+.product-card:hover {
+  transform: scale(1.05); /* effet zoom au survol */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.product-card img {
+  border-radius: 8px;
+  height: auto;
+  width: 190px;
+}
+
+.product-card h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.product-card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+/* Bouton rouge "Ajouter au panier" */
+.btn-panier {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(228, 93, 93);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-panier:hover {
+  background-color: darkred;
+}
+
+
+/* Responsive mobile */
+@media (max-width: 768px) {
+  .badges { /* stack vertically */
+    justify-content: space-between;
+    align-items: center;      /* center horizontally */
+    width: 90%;   
+    margin: -10px auto; 
+  }
+
+  .badge {
+    text-align: center;       /* text centered under image */
+    width: 80%;               /* make badges wider on mobile */
+    height: 70%;
+  }
+
+  .badge img {
+    width: 80px;             /* taille constante adaptée au PC */
+    height: auto;
+  }
+
+  .badge span {
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: -15px;
+}
+}
+
+.product-card:hover {
+  transform: scale(1.05); /* agrandissement */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* effet d’ombre */
+  z-index: 1;
+}
+
+
+.text {
+  font-family: 'Clarity City', sans-serif;
+
+}
+
+.undertext {
+  font-family: 'Clarity City', sans-serif;
+  font-size: 15px;
+}
+
+/*inscription button and stuff*/
+.inscription-container {
+  position: absolute;
+  top: 30px;
+  right: 100px;
+}
+#btn-inscription {
+  padding: 10px 20px;
+  background-color: #14171a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#btn-inscription:hover {
+  background-color: #000000;
+}
+
+/*systeme panier*/
+.header-actions {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+#btn-inscription {
+  padding: 10px 20px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#btn-inscription:hover {
+  background-color: #000000;
+}
+
+.panier {
+  font-size: 1.4em;
+  cursor: pointer;
+  color: #313030;
+}
+
+#panier-count {
+  font-size: 1em;
+  margin-left: 5px;
+  font-weight: bold;
+  color: #000000;
+}

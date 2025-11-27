@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Inscription</title>
+  <link rel="stylesheet" href="inscrisytle.css">
+
+</head>
+<body>
+
+  <div class="headbanner">
+    <h1>Créer un compte</h1>
+  </div>
+
+  <form id="form-inscription" action="traitement_inscription.php" method="POST">
+    <label for="nom">Nom</label>
+    <input type="text" id="nom" name="nom" required>
+
+    <label for="prenom">Prénom</label>
+    <input type="text" id="prenom" name="prenom" required>
+
+    <label for="email">Adresse e-mail</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="motdepasse">Mot de passe</label>
+    <input type="password" id="motdepasse" name="motdepasse" required>
+
+    <label for="confirm">Confirmer le mot de passe</label>
+    <input type="password" id="confirm" name="confirm" required>
+
+    <button type="submit">S'inscrire</button>
+  </form>
+   <div id="confirmation-message">
+    Inscription réussie 🎉 Bienvenue sur notre site !
+  </div>
+
+  <script>
+    const form = document.getElementById("form-inscription");
+    const confirmation = document.getElementById("confirmation-message");
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault(); //
+      confirmation.style.display = "block"; 
+      form.reset(); 
+    });
+  </script>
+
+</body>
+</html>

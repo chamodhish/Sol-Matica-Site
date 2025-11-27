@@ -1,0 +1,115 @@
+@font-face {
+  font-family: 'Clarity City';
+  src: url('fonts/ClarityCity.woff2') format('woff2'),
+       url('fonts/ClarityCity.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Style général */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #ffffff;
+  color: #4a2c2a;
+  margin: 0;
+  padding: 0;
+}
+
+/* Bannière */
+.headbanner {
+  background-color: #ffffff;
+  padding: 30px;
+  text-align: center;
+}
+
+.headbanner h1 {
+  margin: 0;
+  font-size: 2.6em;
+  color: #313030;
+  font-family: 'Clarity City', sans-serif;
+}
+
+/* Formulaire d'inscription */
+form {
+  background-color: #fff;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+form label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+  font-family: 'Clarity City', sans-serif;
+  color: #313030;
+}
+
+/* Champs */
+form input {
+  padding: 12px;
+  border: 1px solid #c27b62;
+  border-radius: 5px;
+  font-size: 1em;
+  margin-bottom: 18px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input:focus {
+  border-color: #8b4c3b;
+  outline: none;
+  box-shadow: 0 0 6px rgba(139, 76, 59, 0.4);
+}
+
+/* Bouton */
+form button {
+  background-color: #313030;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 5px;
+  font-size: 1.1em;
+  font-family: 'Clarity City', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+form button:hover {
+  background-color: #8b4c3b;
+  transform: scale(1.05);
+}
+
+/* Lien vers connexion */
+form p {
+  text-align: center;
+  font-family: 'Clarity City', sans-serif;
+  margin-top: 15px;
+}
+
+form p a {
+  color: #8b4c3b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+form p a:hover {
+  text-decoration: underline;
+}
+
+/*message de confirmation*/ 
+#confirmation-message {
+  display: none; /* caché par défaut */
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Clarity City', sans-serif;
+  font-size: 1.2em;
+  color: #4a2c2a;
+  background-color: #f0e6e4;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
