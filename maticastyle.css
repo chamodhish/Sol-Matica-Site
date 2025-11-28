@@ -14,6 +14,13 @@
   font-weight: normal;
   font-style: normal;
 }
+/*font nombre panier*/
+#panier-count {
+  font-family: 'Clarity City'; 
+  font-size: 20px;                  
+  font-weight: normal;               
+  color: noir;                       
+}
 
 .textmove2 {
   font-family: 'Clarity City', sans-serif;
