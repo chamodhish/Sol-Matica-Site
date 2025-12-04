@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="maticastyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Clarity+City&display=swap" rel="stylesheet">
+
+    <title>Sol-Matica</title>
+</head>
+
+<body>
+    <!-- Éléments décoratifs flottants -->
+    <div class="floating-elements">
+        <div class="leaf leaf-1"></div>
+        <div class="leaf leaf-2"></div>
+        <div class="leaf leaf-3"></div>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="menu-overlay"></div>
+
+    <!-- Mobile Menu Sidebar -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <h2>Sol-Matica</h2>
+            <p>Cosmétiques naturels</p>
+        </div>
+        <nav>
+            <a href="#nos-produits" class="mobile-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0"/>
+                    <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z"/>
+                </svg>
+                Produits
+            </a>
+            <a href="#profil" class="mobile-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                </svg>
+                Profil
+            </a>
+            <a href="#apropos" class="mobile-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                    <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                </svg>
+                À propos
+            </a>
+            <a href="contact.html" class="mobile-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                </svg>
+                Contact
+            </a>
+            <a href="#panier" class="mobile-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9zM1 7v1h14V7zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5"/>
+                </svg>
+                Panier
+            </a>
+        </nav>
+    </div>
+
+    <!-- Menu Hamburger (doit être APRÈS le menu pour le z-index) -->
+    <button class="hamburger" id="hamburger-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <div class="textmove">
+        <h1 class="float">Sol-Matica</h1>
+    </div>
+    
+    <div class="inscription-container">
+        <button id="btn-inscription" class="bounce pulse">S'inscrire</button>
+    </div>
+
+    <div class="banner"></div>
+    
+    <nav class="navbar">
+        <ul>
+            <li><a href="#nos-produits" class="fade-in" style="animation-delay: 0.5s;">Produits</a></li>
+            <li><a href="#apropos" class="fade-in" style="animation-delay: 0.7s;">À propos</a></li>
+            <li><a href="contact.html" class="fade-in" style="animation-delay: 0.9s;">Contact</a></li>
+            <li><a href="#panier" class="fade-in" style="animation-delay: 1.1s;">Panier</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <div class="banner3">
+            <img src="Copilot_20251120_160056.png">
+            <div class="badges">
+                <div class="badge scale-in" style="animation-delay: 1s;">
+                    <img src="64213274-simple-contour-map-of-france-black-outline-map-isolated-on-white-background-removebg-preview.png">
+                    <span>Made in France</span>
+                </div>
+
+                <div class="badge scale-in" style="animation-delay: 1.2s;">
+                    <img src="main-tenant-le-sol-avec-l-icone-de-ligne-plate-de-plante-vecteur-fin-signe-de-protection-de-l-environnement-logo-de-concept-d-ecologie-illustration-de-l-agriculture-2jn0ere-removebg-preview.png">
+                    <span>éco-responsable</span>
+                </div>
+
+                <div class="badge scale-in" style="animation-delay: 1.4s;">
+                    <img src="logohen.png">
+                    <span>éthique</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <h1 id="nos-produits" class="textmove2">Nos produits</h1>
+    
+    <section id="produits" class="produits">
+        <div class="header-actions">
+            <div class="panier">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket" viewBox="0 0 16 16">
+                    <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9zM1 7v1h14V7zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5"/>
+                </svg> 
+                <span id="panier-count">0</span>
+            </div>
+        </div>
+
+        <!-- Produits -->
+        <div class="product-card slide-in-left">
+            <div class="product-image-wrapper">
+                <img src="2.png" alt="Produit 1">
+            </div>
+            <div class="text">
+                <h3>Gommage Solide Purifiant</h3>
+            </div>
+            <div class="undertext">
+                <p>Ingrédients à base de matée et de framboise</p>
+                <button class="btn-panier">Ajouter au panier</button>
+            </div>
+        </div>
+
+        <div class="product-card slide-in-left" style="animation-delay: 0.5s;">
+            <div class="product-image-wrapper">
+                <img src="3.png" alt="Produit 2">
+            </div>
+            <div class="text">
+                <h3>Crème Visage</h3>
+            </div>
+            <div class="undertext">
+                <p>Ingrédients à base de matée et de framboise</p>
+                <button class="btn-panier">Ajouter au panier</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter fade-in">
+        <div class="newsletter-card">
+            <h3>Envie de nous suivre ?</h3>
+            <div class="social-links">
+                <a href="https://www.instagram.com/example/" target="_blank" id="instagram-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                    </svg>
+                </a>
+            </div>
+            <p>Découvrez nos dernières nouveautés et astuces beauté naturelle. Rejoignez notre communauté éco-responsable !</p>
+            <input type="email" placeholder="Entrez votre e-mail" id="email-input">
+            <button id="subscribe-btn" class="button-bounce">S'abonner</button>
+            <p class="privacy-text">En validant mon e-mail, j'accepte de recevoir des emails et newsletters de Sol-matica, conformément à notre Politique de confidentialité.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-bottom">
+            <div class="footer-links">
+                <span>Mentions légales</span>
+                <span> - Conditions générales de vente</span>
+            </div>
+            <p>&copy; 2025 Sol-Matica. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- TOUS LES SCRIPTS À LA FIN -->
+    <script>
+        // Bouton inscription
+        document.getElementById("btn-inscription").addEventListener("click", function() {
+            window.location.href = "inscription.html";
+        });
+
+        // Script panier
+        let panierCount = 0;
+        const panierDisplay = document.getElementById("panier-count");
+        const produits = document.querySelectorAll(".btn-panier");
+
+        produits.forEach(btn => {
+            btn.addEventListener("click", (e) => {
+                panierCount++;
+                panierDisplay.textContent = panierCount;
+                
+                // Animation du panier
+                panierDisplay.parentElement.classList.add('panier-animate');
+                setTimeout(() => {
+                    panierDisplay.parentElement.classList.remove('panier-animate');
+                }, 600);
+                
+                // Effet ripple sur le bouton
+                const ripple = document.createElement('span');
+                ripple.classList.add('ripple-effect');
+                btn.appendChild(ripple);
+                setTimeout(() => ripple.remove(), 600);
+            });
+        });
+
+        // Menu Hamburger
+        const hamburger = document.getElementById('hamburger-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuOverlay = document.getElementById('menu-overlay');
+        const body = document.body;
+
+        function openMenu() {
+            console.log('Opening menu'); // Pour debug
+            hamburger.classList.add('active');
+            mobileMenu.classList.add('active');
+            menuOverlay.classList.add('active');
+            body.style.overflow = 'hidden';
+        }
+
+        function closeMenu() {
+            console.log('Closing menu'); // Pour debug
+            hamburger.classList.remove('active');
+            mobileMenu.classList.remove('active');
+            menuOverlay.classList.remove('active');
+            body.style.overflow = '';
+        }
+
+        // Clic sur hamburger
+        hamburger.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            console.log('Hamburger clicked'); // Pour debug
+            
+            if (mobileMenu.classList.contains('active')) {
+                closeMenu();
+            } else {
+                openMenu();
+            }
+        });
+
+        // Clic sur overlay
+        menuOverlay.addEventListener('click', function(e) {
+            e.preventDefault();
+            closeMenu();
+        });
+
+        // Clic sur liens du menu
+        const menuLinks = mobileMenu.querySelectorAll('a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                closeMenu();
+            });
+        });
+    </script>
+</body>
+</html>
